@@ -9,10 +9,11 @@ import androidx.compose.ui.unit.dp
 import com.example.affirmations.model.Affirmation
 
 @Composable
-fun AffirmationsList(affirmationList: List<Affirmation>, modifier: Modifier) {
+fun AffirmationsList(lista: List<Affirmation>, modifier: Modifier) {
     LazyColumn(modifier = Modifier) {
-        items(affirmationList) { affirmation ->
-            AffirmationCard(affirmation = affirmation, modifier = Modifier.padding(8.dp))
+        // el método que sirve para añadir elementos a la columna es items
+        items(lista) { elemento ->
+            AffirmationCard(affirmation = elemento, modifier = Modifier.padding(8.dp))
         }
     }
 }

@@ -32,6 +32,7 @@ fun AffirmationCard(affirmation: Affirmation, modifier: Modifier = Modifier) {
             )
             Text(
                 text = LocalContext.current.getString(affirmation.stringResourceId),
+                //text = stringResource(affirmation.stringResourceId),
                 modifier = Modifier.padding(16.dp),
                 style = MaterialTheme.typography.headlineSmall
             )
